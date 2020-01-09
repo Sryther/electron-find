@@ -1,15 +1,15 @@
 {
-  "name": "electron-find",
-  "version": "1.0.6",
+  "name": "@sryther/electron-find",
+  "version": "1.0.7",
   "description": "Find all matches for the text in electron app",
   "main": "src/index.js",
   "scripts": {
-    "e": "node_modules/.bin/electron example/main.js",
-    "e2": "node_modules/.bin/electron example2/main.js"
+    "e": "electron example/main.js",
+    "e2": "electron example2/main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheoXiong/electron-find.git"
+    "url": "git+https://github.com/Sryther/electron-find.git"
   },
   "keywords": [
     "find",
@@ -20,10 +20,17 @@
   "author": "TheoXiong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TheoXiong/electron-find/issues"
+    "url": "https://github.com/Sryther/electron-find/issues"
   },
   "homepage": "https://github.com/TheoXiong/electron-find#readme",
   "devDependencies": {
     "electron": "^2.0.0"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {}
 }
